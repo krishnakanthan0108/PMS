@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 const contactInfo = [
-  { label: "Mobile no", value: "97909 93541", icon: "◈" },
-  { label: "Mail", value: "krishnasubash2004@gmail.com", icon: "◇" },
+  { label: "Mobile no", value: "9940201218", icon: "◈" },
+  { label: "Mail", value: "pmsglobalelites@gmail.com", icon: "◇" },
   { label: "Founded", value: "19 January 2026", icon: "◉" },
   { label: "Service Mode", value: "Online / Remote Services", icon: "◎" },
 ];
