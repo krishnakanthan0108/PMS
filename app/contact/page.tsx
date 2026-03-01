@@ -1,18 +1,5 @@
+"use client";
 import { useState } from "react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Get in touch with PMS Global Elites for professional accounting and financial services. Email: krishnasubash2004@gmail.com | Phone: +91 97909 93541. We respond within 24 business hours.",
-  alternates: { canonical: "https://www.pmsglobalelites.in/contact" },
-  openGraph: {
-    title: "Contact PMS Global Elites | Accounting Services India",
-    description:
-      "Reach our accounting team for bookkeeping, GST, MIS reporting or any financial service enquiry. Response within 24 hours.",
-    url: "https://www.pmsglobalelites.in/contact",
-  },
-};
 const contactInfo = [
   { label: "Mobile no", value: "97909 93541", icon: "◈" },
   { label: "Mail", value: "krishnasubash2004@gmail.com", icon: "◇" },
