@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const BASE_URL = "https://www.pmsglobalelites.in";
 
@@ -13,7 +15,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "PMS Global Elites | Professional Accounting & Financial Services India",
+    default:
+      "PMS Global Elites | Professional Accounting & Financial Services India",
     template: "%s | PMS Global Elites",
   },
   description:
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
     "accounting for startups India",
     "remote accounting services India",
     "cash flow management India",
-    "online accounting firm India",    
+    "online accounting firm India",
     "financial consulting India",
     "accounts outsourcing India",
     "tax accounting India",
@@ -48,7 +51,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: BASE_URL,
     siteName: "PMS Global Elites",
-    title: "PMS Global Elites | Professional Accounting & Financial Services India",
+    title:
+      "PMS Global Elites | Professional Accounting & Financial Services India",
     description:
       "Expert bookkeeping, GST filing, MIS reporting & financial consulting for SMEs and startups across India. Reliable. Professional. Fully remote.",
     images: [
@@ -145,7 +149,8 @@ export default function RootLayout({
                         itemOffered: {
                           "@type": "Service",
                           name: "Bookkeeping Services",
-                          description: "Day-to-day bookkeeping and ledger management for SMEs and startups.",
+                          description:
+                            "Day-to-day bookkeeping and ledger management for SMEs and startups.",
                         },
                       },
                       {
@@ -153,7 +158,8 @@ export default function RootLayout({
                         itemOffered: {
                           "@type": "Service",
                           name: "GST Filing & Support",
-                          description: "GST data preparation, filing assistance and compliance support.",
+                          description:
+                            "GST data preparation, filing assistance and compliance support.",
                         },
                       },
                       {
@@ -161,7 +167,8 @@ export default function RootLayout({
                         itemOffered: {
                           "@type": "Service",
                           name: "Bank Reconciliation",
-                          description: "Accurate and timely bank reconciliation statements for businesses.",
+                          description:
+                            "Accurate and timely bank reconciliation statements for businesses.",
                         },
                       },
                       {
@@ -169,7 +176,8 @@ export default function RootLayout({
                         itemOffered: {
                           "@type": "Service",
                           name: "MIS Reporting",
-                          description: "Management information system reports for business decision-making.",
+                          description:
+                            "Management information system reports for business decision-making.",
                         },
                       },
                       {
@@ -177,7 +185,8 @@ export default function RootLayout({
                         itemOffered: {
                           "@type": "Service",
                           name: "Cash Flow Management",
-                          description: "Cash flow forecasting and management for financial stability.",
+                          description:
+                            "Cash flow forecasting and management for financial stability.",
                         },
                       },
                       {
@@ -185,7 +194,8 @@ export default function RootLayout({
                         itemOffered: {
                           "@type": "Service",
                           name: "Financial Consulting",
-                          description: "Strategic financial consulting for startups and growing businesses.",
+                          description:
+                            "Strategic financial consulting for startups and growing businesses.",
                         },
                       },
                     ],
@@ -213,7 +223,11 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
+      <Footer />
     </html>
   );
 }
