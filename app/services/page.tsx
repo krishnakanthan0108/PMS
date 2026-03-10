@@ -57,7 +57,6 @@ const services = [
       "Business promotion assistance",
       "Online branding support",
       "Digital marketing coordination",
-      "Advertising planning & guidance",
       "Social media presence support",
       "Content strategy consultation",
     ],
